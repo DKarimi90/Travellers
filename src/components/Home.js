@@ -1,18 +1,6 @@
-// import React from 'react'
-
-// const Home = () => {
-//   return (
-//     <div className='w-full h-screen relative'>
-//         <div className='w-full h-full'><video src="videos/2.mp4" alt="beach" className='w-full h-full object-cover' loop muted/></div>
-//         <div className='absolute top-0 left-0 bg-gray-900/30 w-full h-full'></div>
-//     </div>
-    
-//   )
-// }
-
-// export default Home
 import React from 'react'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-scroll'
 
 const Home = () => {
 const [currentIndex, setCurrentIndex] = useState(0)
@@ -31,16 +19,16 @@ const images = [
 useEffect(() => {
     const interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex === images.length - 1? 0 : prevIndex + 1))
-    }, 7000)
+    }, 5000)
     return () => clearInterval(interval)
 }, [])
   return (
-    <div className='w-full h-screen relative overflow-hidden'>
+    <div name='home' className='w-full h-screen relative overflow-hidden'>
     <div className='w-full h-screen '>
             {images.map((image, index) => (
                 <div
                 key={index}
-                className={`absolute transition-all duration-7000 ${index === currentIndex? 'opacity-100 scale-100' : 'opacity-0 scale-110'} w-full h-full bg-center bg-cover`}
+                className={`absolute transition-all duration-5000 ${index === currentIndex? 'opacity-100 scale-100' : 'opacity-0 scale-110'} w-full h-full bg-center bg-cover`}
                 style={{backgroundImage: `url(${image.url})`}}
                 ></div>
             ))}
@@ -51,8 +39,11 @@ useEffect(() => {
             <h1 className='text-5xl md:text-6xl lg:text-7xl xl:text-8xl'>Enjoy Vacation with</h1>
             <h1 className='text-5xl md:text-6xl lg:text-7xl xl:text-8xl ml-4 text-[#ff0a54]'>Travels</h1>
         </div>
-        <div>
+        <div className='my-2'>
             <h2>Travel to any corner of the world without going around in circles!</h2>
+        </div>
+        <div className='group'>
+            <button className='p-5 text-3xl font-semibold rounded-md group-hover:text-gray-300 group-hover:bg-white'>Book a Trip</button>    
         </div>
     </div>
     </div>
