@@ -5,6 +5,7 @@ import {MdOutlineKeyboardArrowUp} from 'react-icons/md'
 
 const Home = () => {
 const [currentIndex, setCurrentIndex] = useState(0)
+const [showButton, setShowButton] = useState(false);
 
 const images = [
     {url: "https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?cs=srgb&dl=pexels-asad-photo-maldives-3601425.jpg&fm=jpg"}, 
@@ -20,10 +21,27 @@ const images = [
 ]
 
 useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      const threshold = 100; // Adjust this value as needed
+
+      setShowButton(scrollTop > threshold);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+useEffect(() => {
     const interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex === images.length - 1? 0 : prevIndex + 1))
     }, 7000)
     return () => clearInterval(interval)
+    
 }, [])
   return (
     <div name='home' className='w-full h-screen relative overflow-hidden'>
@@ -49,7 +67,7 @@ useEffect(() => {
             <button className='p-5 text-3xl font-semibold rounded-md hover:text-gray-300 hover:bg-white'>Book a Trip</button>    
         </div>
     </div>
-    <div className='bottom-0 right-2 fixed z-10'>
+    <div className={`bottom-0 right-2 fixed z-10 ${showButton ? 'block' : 'hidden'}`}>
         <button className='font-bold text-[var(--default)] bg-[var(--primary)] rounded-full hover:rounded-full hover:bg-[var(--secondary)] hover:cursor-pointer animate-bounce text-6xl '><Link to="home" smooth={true} duration={700}><MdOutlineKeyboardArrowUp /></Link></button>
     </div>
     </div>
