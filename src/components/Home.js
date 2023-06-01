@@ -11,7 +11,9 @@ const images = [
     {url: "https://cdn1.tablethotels.com/media/ecs/global/email/assets/20200402_Zoom/TabletHotels_SublimeSamana-Mirrored.jpg"}, 
     {url: "https://img.freepik.com/premium-photo/happy-family-playing-swimming-pool-summer-vacation-concept_488220-16272.jpg?w=2000"},
     {url: "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?cs=srgb&dl=pexels-asad-photo-maldives-457882.jpg&fm=jpg"}, 
-    {url: "http://www.themeenergy.com/themes/html/book-your-travel/images/uploads/slider3.jpg"}
+    {url: "http://www.themeenergy.com/themes/html/book-your-travel/images/uploads/slider3.jpg"}, 
+    {url: "https://bluemarblevagabonds.com/wp-content/uploads/2020/07/DSC_4738.jpg"}, 
+    {url: "http://www.themeenergy.com/themes/html/book-your-travel/images/uploads/hotel2.jpg"}
  
     
 ]
@@ -43,7 +45,7 @@ useEffect(() => {
             <h2>Travel to any corner of the world without going around in circles!</h2>
         </div>
         <div className='group'>
-            <button className='p-5 text-3xl font-semibold rounded-md group-hover:text-gray-300 group-hover:bg-white'>Book a Trip</button>    
+            <button className='p-5 text-3xl font-semibold rounded-md hover:text-gray-300 hover:bg-white'>Book a Trip</button>    
         </div>
     </div>
     </div>

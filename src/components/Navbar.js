@@ -30,11 +30,11 @@ useEffect(() => {
     <div className={`w-full h-32 fixed z-10 ${scroll? 'bg-gray-900 text-[var(--default)]': ''}`}>
         <div className='w-full flex max-w-[1240px] mx-auto justify-between items-center h-full px-4'>
         <div>
-          <h1 className={logo? 'hidden': 'block'}><Link to="home" className='cursor-pointer'>TRAVELS.</Link></h1>
+          <h1 className={logo? 'hidden': 'block'}><Link to="home" className='cursor-pointer text-[var(--primary)]'>TRAVELS.</Link></h1>
         </div>
         <ul className='hidden md:flex'>
             <li><Link to="home" smooth={true} duration={500} className="cursor-pointer">Home</Link></li>
-            <li><Link to="places" smooth={true} duration={500} className="cursor-pointer">Places</Link></li>
+            <li><Link to="destinations" smooth={true} duration={500} className="cursor-pointer">Destinations</Link></li>
             <li><Link to="agency" smooth={true} duration={500} className="cursor-pointer">Agency</Link></li>
             <li><Link to="gallery" smooth={true} duration={500} className="cursor-pointer">Gallery</Link></li>
             <li><Link to="testimonials" smooth={true} duration={500} className="cursor-pointer">Testimonials</Link></li>
@@ -53,7 +53,7 @@ useEffect(() => {
           <ul>
             <h1>TRAVELS.</h1>
             <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="home" smooth={true} duration={500} className="cursor-pointer">Home</Link></li>
-            <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="places" smooth={true} duration={500} className="cursor-pointer">Places</Link></li>
+            <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="destinations" smooth={true} duration={500} className="cursor-pointer">Destinations</Link></li>
             <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="agency" smooth={true} duration={500} className="cursor-pointer">Agency</Link></li>
             <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="gallery" smooth={true} duration={500} className="cursor-pointer">Gallery</Link></li>
             <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="testimonials" smooth={true} duration={500} className="cursor-pointer">Testimonials</Link></li>

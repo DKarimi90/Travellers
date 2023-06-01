@@ -29,7 +29,7 @@
   }
 
   button {
-    @apply bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-[#fff] 
+    @apply bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-[#fff] hover:text-gray-300
   }
 
   .icon {
