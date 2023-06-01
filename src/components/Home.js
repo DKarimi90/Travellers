@@ -23,7 +23,7 @@ const images = [
 useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-      const threshold = 100; // Adjust this value as needed
+      const threshold = 100;
 
       setShowButton(scrollTop > threshold);
     };
