@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
+import {MdOutlineKeyboardArrowUp} from 'react-icons/md'
 
 const Home = () => {
 const [currentIndex, setCurrentIndex] = useState(0)
@@ -47,6 +48,9 @@ useEffect(() => {
         <div className='group'>
             <button className='p-5 text-3xl font-semibold rounded-md hover:text-gray-300 hover:bg-white'>Book a Trip</button>    
         </div>
+    </div>
+    <div className='bottom-0 right-2 fixed z-10'>
+        <button className='font-bold text-[var(--default)] bg-[var(--primary)] rounded-full hover:rounded-full hover:bg-[var(--secondary)] hover:cursor-pointer animate-bounce text-6xl '><Link to="home" smooth={true} duration={700}><MdOutlineKeyboardArrowUp /></Link></button>
     </div>
     </div>
     

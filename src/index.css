@@ -25,7 +25,7 @@
     @apply font-[Montserrat]
     }
   li {
-    @apply p-2
+    @apply p-2 text-xl
   }
 
   button {
