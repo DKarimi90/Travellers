@@ -19,7 +19,7 @@ const images = [
 useEffect(() => {
     const interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex === images.length - 1? 0 : prevIndex + 1))
-    }, 5000)
+    }, 7000)
     return () => clearInterval(interval)
 }, [])
   return (
@@ -28,7 +28,7 @@ useEffect(() => {
             {images.map((image, index) => (
                 <div
                 key={index}
-                className={`absolute transition-all duration-5000 ${index === currentIndex? 'opacity-100 scale-100' : 'opacity-0 scale-110'} w-full h-full bg-center bg-cover`}
+                className={`absolute transition-all duration-7000 ${index === currentIndex? 'opacity-100 scale-100' : 'opacity-0 scale-110'} w-full h-full bg-center bg-cover`}
                 style={{backgroundImage: `url(${image.url})`}}
                 ></div>
             ))}

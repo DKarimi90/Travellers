@@ -33,7 +33,8 @@
   }
 
   .icon {
-    @apply text-2xl
+    @apply text-2xl cursor-pointer hover:animate-pulse
   }
+ 
 
   }

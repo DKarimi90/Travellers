@@ -30,15 +30,15 @@ useEffect(() => {
     <div className={`w-full h-32 fixed z-10 ${scroll? 'bg-gray-900 text-[var(--default)]': ''}`}>
         <div className='w-full flex max-w-[1240px] mx-auto justify-between items-center h-full px-4'>
         <div>
-          <h1 className={logo? 'hidden': 'block'}>TRAVELS.</h1>
+          <h1 className={logo? 'hidden': 'block'}><Link to="home" className='cursor-pointer'>TRAVELS.</Link></h1>
         </div>
         <ul className='hidden md:flex'>
-            <li>Home</li>
-            <li>Places</li>
-            <li>Agency</li>
-            <li>Gallery</li>
-            <li>Testimonials</li>
-            <li>NewsLetter</li>
+            <li><Link to="home" smooth={true} duration={500} className="cursor-pointer">Home</Link></li>
+            <li><Link to="places" smooth={true} duration={500} className="cursor-pointer">Places</Link></li>
+            <li><Link to="agency" smooth={true} duration={500} className="cursor-pointer">Agency</Link></li>
+            <li><Link to="gallery" smooth={true} duration={500} className="cursor-pointer">Gallery</Link></li>
+            <li><Link to="testimonials" smooth={true} duration={500} className="cursor-pointer">Testimonials</Link></li>
+            <li><Link to="newsletter" smooth={true} duration={500} className="cursor-pointer">NewsLetter</Link></li>
         </ul>
         <div className='hidden md:flex'>
           <BsPerson size={20} className="mr-3"/>
@@ -52,12 +52,12 @@ useEffect(() => {
         <div className={nav? 'absolute top-0 left-0 py-12 px-4 w-full md:hidden bg-gray-900 text-[var(--default)]': 'hidden left-[-100%]'}>
           <ul>
             <h1>TRAVELS.</h1>
-            <li className='py-3 text-xl border-b border-gray-100'>Home</li>
-            <li className='py-3 text-xl border-b border-gray-100'>Places</li>
-            <li className='py-3 text-xl border-b border-gray-100'>Agency</li>
-            <li className='py-3 text-xl border-b border-gray-100'>Gallery</li>
-            <li className='py-3 text-xl border-b border-gray-100'>Testimonials</li>
-            <li className='py-3 text-xl border-b border-gray-100'>NewsLetter</li>
+            <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="home" smooth={true} duration={500} className="cursor-pointer">Home</Link></li>
+            <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="places" smooth={true} duration={500} className="cursor-pointer">Places</Link></li>
+            <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="agency" smooth={true} duration={500} className="cursor-pointer">Agency</Link></li>
+            <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="gallery" smooth={true} duration={500} className="cursor-pointer">Gallery</Link></li>
+            <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="testimonials" smooth={true} duration={500} className="cursor-pointer">Testimonials</Link></li>
+            <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="newsletter" smooth={true} duration={500} className="cursor-pointer">NewsLetter</Link></li>
             <div className='flex flex-col my-4 w-full'>
               <button className='my-2 p-2 rounded  font-bold'>Account</button>
               <button className='my-2 p-2 rounded  font-bold'>Search</button>
