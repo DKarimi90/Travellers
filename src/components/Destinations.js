@@ -8,7 +8,7 @@ const Destinations = () => {
     <div name="destinations" className='w-full h-full'>
         <div className='flex flex-col w-full h-full max-w-[1240px] mx-auto justify-center items-center lg:my-16'>
             <div>
-              <h1 className='font-[Montserrat] font-thin uppercase border-b border-gray-400 pb-4 text-2xl' >Around the World</h1>
+              <h1 className='font-[Montserrat] font-thin uppercase border-b border-[var(--primary)] pb-4 text-2xl' >Around the World</h1>
             </div>
             <div className=' mt-6 lg:mt-16 flex flex-col text-center'>
               <h2 className='text-7xl'>It's time to <span className='text-[var(--primary)]'>travel</span></h2>

@@ -40,7 +40,7 @@ useEffect(() => {
             <li><Link to="testimonials" smooth={true} duration={500} className="cursor-pointer">Testimonials</Link></li>
             <li><Link to="newsletter" smooth={true} duration={500} className="cursor-pointer">NewsLetter</Link></li>
         </ul>
-        <div className='hidden md:flex'>
+        <div className='hidden md:flex text-[var(--primary)]'>
           <BsPerson size={20} className="mr-3"/>
           <BsSearch size={20} />
         </div>
