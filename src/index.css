@@ -8,10 +8,12 @@
   
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+NSW+ACT+Foundation:wght@500&family=Fasthand&family=Lato:wght@300&family=Lora:ital@0;1&family=MonteCarlo&family=Montserrat:ital,wght@0,200;0,300;0,600;0,700;0,900;1,100;1,200;1,400&family=Moon+Dance&family=Open+Sans:ital,wght@0,700;1,500&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto+Mono&family=Roboto:ital,wght@0,100;1,300&family=Sassy+Frass&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap');
 
+
 :root {
-  --primary: #ff0a54; 
-  --secondary: #ff5c8a; 
-  --default: #ffffff;
+  --primary: #ffb703; 
+  --secondary: #e9c46a; 
+  --default: #ffffff; 
+
 }
 
 @layer base {

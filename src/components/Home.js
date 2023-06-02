@@ -58,7 +58,7 @@ useEffect(() => {
     <div className='absolute top-0 left-0 h-full w-full flex flex-col justify-center text-center text-[var(--default)]'>
         <div className='flex max-w-[1240px] mx-auto'>
             <h1 className='text-5xl md:text-6xl lg:text-7xl xl:text-8xl'>Enjoy Vacation with</h1>
-            <h1 className='text-5xl md:text-6xl lg:text-7xl xl:text-8xl ml-4 text-[#ff0a54]'>Travels</h1>
+            <h1 className='text-5xl md:text-6xl lg:text-7xl xl:text-8xl ml-4 text-[var(--primary)]'>Travels</h1>
         </div>
         <div className='my-2'>
             <h2>Travel to any corner of the world without going around in circles!</h2>
@@ -68,7 +68,7 @@ useEffect(() => {
         </div>
     </div>
     <div className={`bottom-0 right-2 fixed z-10 ${showButton ? 'block' : 'hidden'}`}>
-        <button className='font-bold text-[var(--default)] bg-[var(--primary)] rounded-full hover:rounded-full hover:bg-[var(--secondary)] hover:cursor-pointer animate-bounce text-6xl '><Link to="home" smooth={true} duration={700}><MdOutlineKeyboardArrowUp /></Link></button>
+        <button className='font-bold text-[var(--default)] bg-[var(--primary)] rounded-full hover:rounded-full hover:bg-[var(--secondary)] hover:cursor-pointer animate-bounce text-6xl'><Link to="home" smooth={true} duration={700}><MdOutlineKeyboardArrowUp title = "Back to Top"/></Link></button>
     </div>
     </div>
     
