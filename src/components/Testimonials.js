@@ -19,7 +19,7 @@ const images = [
   {url: "https://media.istockphoto.com/id/894361286/photo/mr-cool-himself.jpg?s=612x612&w=0&k=20&c=m9hfsqOm149_SY_C3w79MgwEncru9X61oJwZHec3Xr8=", 
   name: "Mike Norwel", 
   career: "Graphic Designer", 
-  content: "I had the best time exploring with TRAVEL. Their attention to detail and personalized approach made our journey truly remarkable."}, 
+  content: "I had the best time exploring with TRAVEL. Their attention to detail and personalized approach made my journey truly remarkable."}, 
   {url: "https://t3.ftcdn.net/jpg/01/50/57/68/360_F_150576875_vigISGDBcfkAHglravODnkZPppYoirvU.webp", 
   name: "Hannah Spencer", 
   career: "Agronomist", 
@@ -91,10 +91,10 @@ const images = [
           <IoIosArrowForward size={40} />
         </div>
 
-        <div className="flex justify-center mt-3 hover:cursor-pointer">
+        <div className="flex justify-center mt-1 hover:cursor-pointer">
           {images.map((image, index) => (
             <div key={index} onClick={() => goToNextImage(index)}>
-              <BsDot size={30} />
+              <BsDot size={40} />
             </div>
           ))}
         </div>

@@ -41,8 +41,8 @@ useEffect(() => {
             <li><Link to="newsletter" smooth={true} duration={500} className="cursor-pointer">NewsLetter</Link></li>
         </ul>
         <div className='hidden md:flex text-[var(--primary)]'>
-          <BsPerson size={20} className="mr-3"/>
-          <BsSearch size={20} />
+          <BsPerson size={20} className="mr-3 hover:cursor-pointer" />
+          <BsSearch size={20} className="hover:cursor-pointer" />
         </div>
 
         {/* MOBILE MENU */}
