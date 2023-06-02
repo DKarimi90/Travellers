@@ -38,5 +38,8 @@
     @apply text-2xl cursor-pointer hover:animate-pulse
   }
  
+  .arrow {
+    @apply absolute top-1/2 translate-x-0 translate-y-1/2 bg-gray-200 rounded-full hidden group-hover:block hover:cursor-pointer
+  }
 
   }
