@@ -1,5 +1,3 @@
-
-
 import React, {useState, useEffect} from 'react'
 import {IoIosArrowBack, IoIosArrowForward} from 'react-icons/io'
 import {BsDot} from 'react-icons/bs'
@@ -94,7 +92,7 @@ const images = [
         <div className="flex justify-center mt-1 hover:cursor-pointer">
           {images.map((image, index) => (
             <div key={index} onClick={() => goToNextImage(index)}>
-              <BsDot size={40} />
+              <BsDot size={50} className={`${index === currentIndex ? 'text-[var(--primary)] animate-pulse' : 'text-gray-500'}`}/> 
             </div>
           ))}
         </div>
