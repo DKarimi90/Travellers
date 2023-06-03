@@ -18,6 +18,10 @@ const images = [
   name: "Mike Norwel", 
   career: "Graphic Designer", 
   content: "I had the best time exploring with TRAVEL. Their attention to detail and personalized approach made my journey truly remarkable."}, 
+  {url: "https://t3.ftcdn.net/jpg/04/03/65/86/360_F_403658626_OBIL8t42jBx82MpYjmJ1KJFKDoCd0tsF.jpg", 
+  name: "Mercy Russell", 
+  career: "Legal Consultant", 
+  content: "TRAVEL made our dream vacation a reality! The stunning destinations, seamless organization, and friendly guides exceeded our expectations."},
   {url: "https://t3.ftcdn.net/jpg/01/50/57/68/360_F_150576875_vigISGDBcfkAHglravODnkZPppYoirvU.webp", 
   name: "Hannah Spencer", 
   career: "Agronomist", 
@@ -92,7 +96,7 @@ const images = [
         <div className="flex justify-center mt-1 hover:cursor-pointer">
           {images.map((image, index) => (
             <div key={index} onClick={() => goToNextImage(index)}>
-              <BsDot size={50} className={`${index === currentIndex ? 'text-[var(--primary)] animate-pulse' : 'text-gray-500'}`}/> 
+              <BsDot size={40} className={`${index === currentIndex ? 'text-[var(--primary)] animate-pulse' : 'text-gray-500'}`}/> 
             </div>
           ))}
         </div>
