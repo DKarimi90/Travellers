@@ -27,9 +27,9 @@ useEffect(() => {
           {tours.map((tour, index) => (
             <div key={index} className="xl:w-[600px] xl:gap-4 relative group">
                 <img src={tour.url} alt="tour"/>
-                <p className='absolute top-5 left-5 font-bold group-hover:text-[var(--default)]'>{tour.tourName}</p>
-                <p className='absolute right-5 bottom-14'>{tour.date}</p>
-                <p className='absolute right-5 bottom-7'>{tour.length}</p>
+                <h1 className='absolute top-5 left-5 font-bold group-hover:text-[var(--primary)] uppercase text-4xl group-hover:z-10'>{tour.tourName}</h1>
+                <h2 className='absolute right-5 bottom-16 text-3xl font-bold group-hover:text-[var(--default)] group-hover:z-10'>{tour.date}</h2>
+                <p className='absolute right-5 bottom-7 text-3xl group-hover:text-[var(--default)] group-hover:z-10'>{tour.length}</p>
                 <div className='absolute top-0 left-0 w-full h-full bg-slate-100/50 hover:scale-90 duration-700 hover:bg-slate-900/30'></div>
             </div>
           ))} 

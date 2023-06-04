@@ -5,7 +5,7 @@ import {MdLocationOn, MdOutlineExplore} from 'react-icons/md'
 
 const Destinations = () => {
   return (
-    <div name="destinations" className='w-full h-full'>
+    <div name="destinations" className='w-full h-full my-32'>
         <div className='flex flex-col w-full h-full max-w-[1240px] mx-auto justify-center items-center lg:my-16'>
             <div>
               <h1 className='font-[Montserrat] font-thin uppercase border-b border-[var(--primary)] pb-4 text-2xl' >Around the World</h1>
