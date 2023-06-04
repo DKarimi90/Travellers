@@ -17,7 +17,8 @@ useEffect(() => {
     })
 }, [])
   return (
-    <div name="planned" className='w-full h-screen mx-auto mt-32'>
+    <div name="planned" className='w-full h-screen mt-32'>
+      <div className='border-t w-full max-w-[800px] mx-auto border-[var(--secondary)] mb-10'></div>
         <div className='flex justify-center mb-12'>
              <h2 className='text-6xl font-thin border-b-4 border-[var(--primary)] pb-5 '>LINED<span className='font-bold pl-3'>UP</span></h2>
         </div>
