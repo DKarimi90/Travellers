@@ -1,0 +1,41 @@
+{
+    "tours": [
+        {"url": "https://images.pexels.com/photos/3981878/pexels-photo-3981878.jpeg?cs=srgb&dl=pexels-on-shot-3981878.jpg&fm=jpg", 
+        "tourName": "Miami Beach", 
+        "date": "01 July, 2023", 
+        "length": "3 nights 2 days",
+        "details": "more info on itinerary"
+        },
+        {"url": "https://images.pexels.com/photos/5715513/pexels-photo-5715513.jpeg?cs=srgb&dl=pexels-roger-brown-5715513.jpg&fm=jpg", 
+        "tourName": "WildLife Safari", 
+        "date": "05 July, 2023", 
+        "length": "4 nights 3 days",
+        "details": "more info on itinerary"
+        },
+        {"url": "https://static2.mywedding.com/wp-content/uploads/2014/06/13144253/vladimir-kudinov-eQQDRilCZEM-unsplash.jpg", 
+        "tourName": "Romantic Trip", 
+        "date": "12 July, 2023", 
+        "length": "4 nights 3 days",
+        "details": "more info on itinerary"
+        },
+        {"url": "https://images.pexels.com/photos/1076081/pexels-photo-1076081.jpeg?cs=srgb&dl=pexels-guduru-ajay-bhargav-1076081.jpg&fm=jpg", 
+        "tourName": "Adventure Tour", 
+        "date": "26 July, 2023", 
+        "length": "3 nights 2 days",
+        "details": "more info on itinerary"
+        },
+        {"url": "https://images.pexels.com/photos/5368722/pexels-photo-5368722.jpeg?cs=srgb&dl=pexels-sergey-makashin-5368722.jpg&fm=jpg", 
+        "tourName": "Family Moments", 
+        "date": "11 August, 2023", 
+        "length": "4 nights 3 days",
+        "details": "more info on itinerary"
+        }, 
+        {"url": "https://images.pexels.com/photos/5368722/pexels-photo-5368722.jpeg?cs=srgb&dl=pexels-sergey-makashin-5368722.jpg&fm=jpg", 
+        "tourName": "Family Moments", 
+        "date": "11 August, 2023", 
+        "length": "4 nights 3 days",
+        "details": "more info on itinerary"
+        }
+       
+    ]
+}

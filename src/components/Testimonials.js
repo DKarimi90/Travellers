@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {IoIosArrowBack, IoIosArrowForward} from 'react-icons/io'
-import {BsDot} from 'react-icons/bs'
+import {RxDotFilled} from 'react-icons/rx'
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -78,9 +78,9 @@ const images = [
 
         {/* Slide Content */}
         <div className="w-[700px] ml-[-52%] p-4 mt-16 flex flex-col text-center">
-          <h3 className="text-2xl text-[var(--primary)] font-semibold">{images[currentIndex].name}</h3>
-          <p className="text-2xl font-bold ">{images[currentIndex].career}</p>
           <p className="text-lg italic">{images[currentIndex].content}</p>
+          <h3 className="text-2xl uppercase mt-3">{images[currentIndex].name}</h3>
+          <p className="text-2xl font-bold text-[var(--primary)]">{images[currentIndex].career}</p>
         </div>
 
         {/* Left Arrow */}
@@ -96,7 +96,7 @@ const images = [
         <div className="flex justify-center mt-1 hover:cursor-pointer">
           {images.map((image, index) => (
             <div key={index} onClick={() => goToNextImage(index)}>
-              <BsDot size={40} className={`${index === currentIndex ? 'text-[var(--primary)] animate-pulse' : 'text-gray-500'}`}/> 
+              <RxDotFilled size={40} className={`${index === currentIndex ? 'text-[var(--primary)] animate-pulse' : 'text-gray-500'}`}/> 
             </div>
           ))}
         </div>

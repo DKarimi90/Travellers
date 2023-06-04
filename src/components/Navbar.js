@@ -36,8 +36,8 @@ useEffect(() => {
             <li><Link to="home" smooth={true} duration={500} className="cursor-pointer">Home</Link></li>
             <li><Link to="destinations" smooth={true} duration={500} className="cursor-pointer">Destinations</Link></li>
             <li><Link to="agency" smooth={true} duration={500} className="cursor-pointer">Agency</Link></li>
-            <li><Link to="gallery" smooth={true} duration={500} className="cursor-pointer">Gallery</Link></li>
             <li><Link to="testimonials" smooth={true} duration={500} className="cursor-pointer">Testimonials</Link></li>
+            <li><Link to="planned" smooth={true} duration={500} className="cursor-pointer">Planned</Link></li>
             <li><Link to="newsletter" smooth={true} duration={500} className="cursor-pointer">NewsLetter</Link></li>
         </ul>
         <div className='hidden md:flex text-[var(--primary)]'>
@@ -55,8 +55,8 @@ useEffect(() => {
             <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="home" smooth={true} duration={500} className="cursor-pointer">Home</Link></li>
             <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="destinations" smooth={true} duration={500} className="cursor-pointer">Destinations</Link></li>
             <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="agency" smooth={true} duration={500} className="cursor-pointer">Agency</Link></li>
-            <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="gallery" smooth={true} duration={500} className="cursor-pointer">Gallery</Link></li>
             <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="testimonials" smooth={true} duration={500} className="cursor-pointer">Testimonials</Link></li>
+            <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="planned" smooth={true} duration={500} className="cursor-pointer">Planned</Link></li>
             <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="newsletter" smooth={true} duration={500} className="cursor-pointer">NewsLetter</Link></li>
             <div className='flex flex-col my-4 w-full'>
               <button className='my-2 p-2 rounded  font-bold'>Account</button>
