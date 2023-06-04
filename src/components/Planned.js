@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react'
+import { Link } from 'react-router-dom'
 
 const Planned = () => {
 const [tours, setTours] =useState([])
 
 useEffect(() => {
-    fetch(` http://localhost:3001/tours`)
+    fetch(`https://fake-api-self.vercel.app/tours`)
     .then(res => {
         if(res.ok){
             return res.json()
@@ -25,13 +26,14 @@ useEffect(() => {
         </div>
         <div className='grid md:grid-cols-2 lg:grid-cols-3 grid-rows-none gap-4 px-2'>
           {tours.map((tour, index) => (
+            <Link to={`/tours/${tour.id}`}>
             <div key={index} className="xl:w-[600px] xl:gap-4 relative group">
                 <img src={tour.url} alt="tour"/>
                 <h1 className='absolute top-5 left-5 font-bold group-hover:text-[var(--primary)] uppercase text-4xl group-hover:z-10'>{tour.tourName}</h1>
                 <h2 className='absolute right-5 bottom-16 text-3xl font-bold group-hover:text-[var(--default)] group-hover:z-10'>{tour.date}</h2>
                 <p className='absolute right-5 bottom-7 text-3xl group-hover:text-[var(--default)] group-hover:z-10'>{tour.length}</p>
                 <div className='absolute top-0 left-0 w-full h-full bg-slate-100/50 hover:scale-90 duration-700 hover:bg-slate-900/30'></div>
-            </div>
+            </div></Link>
           ))} 
         </div>
     </div>
