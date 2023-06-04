@@ -52,12 +52,12 @@ useEffect(() => {
         <div className={nav? 'absolute top-0 left-0 py-12 px-4 w-full md:hidden bg-gray-900 text-[var(--default)]': 'hidden left-[-100%]'}>
           <ul>
             <h1>TRAVELS.</h1>
-            <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="home" smooth={true} duration={500} className="cursor-pointer">Home</Link></li>
-            <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="destinations" smooth={true} duration={500} className="cursor-pointer">Destinations</Link></li>
-            <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="agency" smooth={true} duration={500} className="cursor-pointer">Agency</Link></li>
-            <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="testimonials" smooth={true} duration={500} className="cursor-pointer">Testimonials</Link></li>
-            <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="planned" smooth={true} duration={500} className="cursor-pointer">Planned</Link></li>
-            <li className='py-3 text-xl border-b border-gray-100'><Link onClick={handleToggle} to="newsletter" smooth={true} duration={500} className="cursor-pointer">NewsLetter</Link></li>
+            <li className='li-mobile'><Link onClick={handleToggle} to="home" smooth={true} duration={500} className="cursor-pointer">Home</Link></li>
+            <li className='li-mobile'><Link onClick={handleToggle} to="destinations" smooth={true} duration={500} className="cursor-pointer">Destinations</Link></li>
+            <li className='li-mobile'><Link onClick={handleToggle} to="agency" smooth={true} duration={500} className="cursor-pointer">Agency</Link></li>
+            <li className='li-mobile'><Link onClick={handleToggle} to="testimonials" smooth={true} duration={500} className="cursor-pointer">Testimonials</Link></li>
+            <li className='li-mobile'><Link onClick={handleToggle} to="planned" smooth={true} duration={500} className="cursor-pointer">Planned</Link></li>
+            <li className='li-mobile'><Link onClick={handleToggle} to="newsletter" smooth={true} duration={500} className="cursor-pointer">NewsLetter</Link></li>
             <div className='flex flex-col my-4 w-full'>
               <button className='my-2 p-2 rounded  font-bold'>Account</button>
               <button className='my-2 p-2 rounded  font-bold'>Search</button>

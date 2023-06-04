@@ -41,5 +41,8 @@
   .arrow {
     @apply absolute top-1/2 translate-x-0 translate-y-1/2 bg-gray-200 rounded-full hidden group-hover:block hover:cursor-pointer
   }
+  .li-mobile {
+    @apply py-3 text-xl border-b border-gray-100
+  }
 
   }
