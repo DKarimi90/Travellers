@@ -22,7 +22,7 @@ const TourDetails = () => {
 
   return (
     <div>
-        <p className='text-7xl'>Trial</p>
+        <p className='text-7xl'></p>
     </div>
   )
 }

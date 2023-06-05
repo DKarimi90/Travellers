@@ -29,6 +29,7 @@ import Planned from "./components/Planned";
 import Testimonials from "./components/Testimonials";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TourDetails from "./components/TourDetails";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Agency />
             <Testimonials />
             <Planned />
+            <Footer />
       </div>
     </Router>
   );

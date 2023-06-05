@@ -27,7 +27,7 @@ useEffect(() => {
 
 
   return (
-    <div className={`w-full h-32 fixed z-10 ${scroll? 'bg-gray-900 text-[var(--default)]': ''}`}>
+    <div className={`w-full h-32 fixed z-20 ${scroll? 'bg-gray-900 text-[var(--default)]': ''}`}>
         <div className='w-full flex max-w-[1240px] mx-auto justify-between items-center h-full px-4'>
         <div>
           <h1 className={logo? 'hidden': 'block'}><Link to="home" className='cursor-pointer text-[var(--primary)] border-b border-[var(--primary)] lg:text-2xl'>TRAVELS.</Link></h1>
