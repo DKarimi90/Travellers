@@ -64,7 +64,7 @@ useEffect(() => {
             <h2>Travel to any corner of the world without going around in circles!</h2>
         </div>
         <div className='group'>
-            <button className='p-5 text-3xl font-semibold rounded-md hover:text-gray-300 hover:bg-white'>Book a Trip</button>    
+            <button className='p-5 text-3xl font-semibold rounded-md hover:text-gray-300 hover:bg-white'><a href='/new'>Book a Trip</a></button>    
         </div>
     </div>
     <div className={`bottom-0 right-2 fixed z-10 ${showButton ? 'block' : 'hidden'}`}>

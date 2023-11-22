@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'react-scroll';
 
+
 const Footer = () => {
+  const time = () => {
+    return new Date().getFullYear()
+  }
     return (
         <div className="bg-gray-900 w-full screen mx-auto] text-[var(--default)]">
           <div className=" px-4 py-16 sm:px-6 lg:px-8">
@@ -18,7 +22,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="col-span-2 lg:col-span-3 lg:flex lg:items-end">
-                  <form className='w-full'>
+                  <form className='w-full text-gray-600'>
                     <div className="flex justify-between border border-gray-300 focus-within:ring sm:flex sm:items-center sm:gap-4 bg-gray-300">
                       <input type="email" placeholder='Your Email' className='bg-transparent text-xl pl-4 focus:outline-none'/>
                       <button className='font-semibold py-3 px-4 text-xl'>Sign UP</button>
@@ -176,7 +180,7 @@ const Footer = () => {
             <div className="mt-8 border-t border-gray-100 pt-8">
               <div className="sm:flex sm:justify-between">
                 <p className="text-md text-gray-200">
-                  © 2022. David. All rights reserved.
+                  © {time()}. David. All rights reserved.
                 </p>
                 <nav aria-label="Footer Navigation - Support" className="mt-8 sm:mt-0">
                   <ul className="flex flex-wrap justify-start gap-4 text-xs lg:justify-end">

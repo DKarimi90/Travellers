@@ -37,7 +37,7 @@ useEffect(() => {
             <li><Link to="destinations" smooth={true} duration={500} className="cursor-pointer">Destinations</Link></li>
             <li><Link to="agency" smooth={true} duration={500} className="cursor-pointer">Agency</Link></li>
             <li><Link to="testimonials" smooth={true} duration={500} className="cursor-pointer">Testimonials</Link></li>
-            <li><Link to="planned" smooth={true} duration={500} className="cursor-pointer">Planned</Link></li>
+            <li><Link to="planned" smooth={true} duration={500} className="cursor-pointer">Planned</Link></li>                                                                  
         </ul>
         <div className='hidden md:flex text-[var(--primary)]'>
           <BsPerson size={20} className="mr-3 hover:cursor-pointer" />
